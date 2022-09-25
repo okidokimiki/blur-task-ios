@@ -1,22 +1,18 @@
 import UIKit
 
 final class PhotoStreamViewController: BaseViewController<PhotoStreamView> {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigation()
+        setupNavigationBar()
     }
 }
 
-// MARK: - Navigation
+// MARK: - NavigationBar
 
 private extension PhotoStreamViewController {
     
-    func setupNavigation() {
+    func setupNavigationBar() {
         guard let navigationBar = navigationController?.navigationBar else { return }
         
         lazy var leftLabel = UILabel().do {

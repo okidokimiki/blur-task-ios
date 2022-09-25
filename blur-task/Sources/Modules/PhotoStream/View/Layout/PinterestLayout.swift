@@ -1,4 +1,8 @@
-// https://www.raywenderlich.com/4829472-uicollectionview-custom-layout-tutorial-pinterest
+/**
+ * source web-site: https://www.raywenderlich.com/4829472-uicollectionview-custom-layout-tutorial-pinterest
+ * github project: https://github.com/huydemi/Pinterest
+ * awesome example: https://github.com/AZCoder2/Pinterest
+ */
 
 import UIKit
 
@@ -28,17 +32,17 @@ final class PinterestLayout: UICollectionViewLayout {
     }
     
     override var collectionViewContentSize: CGSize {
-        .init(width: contentWidth, height: contentHeight)
+        CGSize(width: contentWidth, height: contentHeight)
     }
     
     override func prepare() {
         guard cache.isEmpty, let collectionView = collectionView else { return }
         
-        let columnWidth = contentWidth / CGFloat(numberOfColumns)
         var xOffset: [CGFloat] = []
-        (0..<numberOfColumns).forEach { xOffset.append(CGFloat($0) * columnWidth) }
+        var yOffset: [CGFloat] = .init(repeating: 0.0, count: numberOfColumns)
         var column = 0
-        var yOffset: [CGFloat] = .init(repeating: 0, count: numberOfColumns)
+        let columnWidth = contentWidth / CGFloat(numberOfColumns)
+        (0..<numberOfColumns).forEach { xOffset.append(CGFloat($0) * columnWidth) }
         
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)

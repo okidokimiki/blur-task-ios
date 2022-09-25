@@ -249,8 +249,8 @@
 			children = (
 				041EB74728DDAD95003D89E1 /* PhotoStreamViewController.swift */,
 				041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */,
-				0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */,
 				0468A59128E09D5800354EF9 /* Layout */,
+				0468A5A228E105FB00354EF9 /* Cells */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +277,14 @@
 				0468A59F28E0FD4D00354EF9 /* UIImageView+AspectSize.swift */,
 			);
 			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		0468A5A228E105FB00354EF9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

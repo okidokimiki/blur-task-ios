@@ -1,13 +1,9 @@
 import UIKit
+import SnapKit
 
 final class PhotoCollectionViewCell: BaseCollectionViewCell {
     
     private let imageView = UIImageView()
-    
-    override func setup() {
-        super.setup()
-        contentView.backgroundColor = .yellow
-    }
     
     override func layout() {
         super.layout()
