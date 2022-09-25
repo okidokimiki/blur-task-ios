@@ -2,13 +2,11 @@ import UIKit
 
 final class PhotoCollectionViewCell: BaseCollectionViewCell {
     
-    private lazy var imageView = UIImageView().do {
-        $0.contentMode = .scaleAspectFit
-    }
+    private let imageView = UIImageView()
     
     override func setup() {
         super.setup()
-        backgroundColor = .blue
+        contentView.backgroundColor = .yellow
     }
     
     override func layout() {

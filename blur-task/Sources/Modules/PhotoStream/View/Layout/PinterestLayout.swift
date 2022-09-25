@@ -3,21 +3,26 @@
 import UIKit
 
 protocol PinterestLayoutDelegate: AnyObject {
-  func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat
 }
 
-class PinterestLayout: UICollectionViewLayout {
+final class PinterestLayout: UICollectionViewLayout {
     
     weak var delegate: PinterestLayoutDelegate?
     
     private let numberOfColumns = 2
-    private let cellPadding: CGFloat = 6
+    private var cellPadding: CGFloat = 6
     private var contentHeight: CGFloat = 0
     
     private var cache: [UICollectionViewLayoutAttributes] = []
     
+    convenience init(with cellPadding: CGFloat) {
+        self.init()
+        self.cellPadding = cellPadding
+    }
+    
     private var contentWidth: CGFloat {
-        guard let collectionView = collectionView else { return 0 }
+        guard let collectionView = collectionView else { return .zero }
         let insets = collectionView.contentInset
         return collectionView.bounds.width - (insets.left + insets.right)
     }
@@ -38,7 +43,8 @@ class PinterestLayout: UICollectionViewLayout {
         for item in 0..<collectionView.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
             
-            let photoHeight = delegate?.collectionView(collectionView,heightForPhotoAtIndexPath: indexPath) ?? 180
+            let width = columnWidth - cellPadding * 2
+            let photoHeight = delegate?.collectionView(collectionView, heightForPhotoAtIndexPath: indexPath, withWidth: width) ?? 180
             let height = cellPadding * 2 + photoHeight
             let frame: CGRect = .init(
                 x: xOffset[column],

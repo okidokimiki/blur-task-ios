@@ -1,21 +1,17 @@
 import UIKit
 import SnapKit
+import AVFoundation
 
 final class PhotoStreamView: BaseView {
     
     #warning("Это должно быть в viewModel")
     private var photos: [Photo] = Photo.allPhotos()
     
-    private lazy var flowLayout = UICollectionViewFlowLayout().do {
-        $0.itemSize = .init(width: 150, height: 150)
-        $0.scrollDirection = .vertical
-    }
-    
-    private lazy var collectionView = BaseCollectionView(frame: .zero, collectionViewLayout: PinterestLayout()).do {
+    private lazy var photosCollectionView = BaseCollectionView(layout: PinterestLayout.self).do {
         if let layout = $0.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
         }
-        $0.backgroundColor = .red
+        $0.backgroundColor = .none
         $0.delegate = self
         $0.dataSource = self
         $0.showsVerticalScrollIndicator = false
@@ -29,8 +25,8 @@ final class PhotoStreamView: BaseView {
     
     override func layout() {
         super.layout()
-        addSubviews(collectionView)
-        collectionView.snp.makeConstraints { make in
+        addSubviews(photosCollectionView)
+        photosCollectionView.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.left.right.bottom.equalToSuperview()
         }
@@ -61,9 +57,12 @@ extension PhotoStreamView: UICollectionViewDataSource {
 
 extension PhotoStreamView: PinterestLayoutDelegate {
     
-    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath) -> CGFloat {
-        guard let image = photos[indexPath.item].image else { return 0 }
+    func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
+        guard let image = photos[indexPath.item].image else { return .zero }
         
-        return image.size.height
+        let boundingRect = CGRect(x: 0, y: 0, width: width, height: .infinity)
+        let rect = AVMakeRect(aspectRatio: image.size, insideRect: boundingRect)
+        
+        return rect.size.height
     }
 }
