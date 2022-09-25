@@ -8,7 +8,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: FilterViewController())
+        #warning("Не нравится кол-во скобок. Мб можно как-то вынести UINavigationController в проперти?")
+        window?.rootViewController = UINavigationController(rootViewController: PhotoStreamViewController())
         window?.makeKeyAndVisible()
     }
 }

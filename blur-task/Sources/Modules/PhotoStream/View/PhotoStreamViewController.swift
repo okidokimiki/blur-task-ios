@@ -1,20 +1,20 @@
 import UIKit
 
-final class FilterViewController: BaseViewController<FilterView> {
+final class PhotoStreamViewController: BaseViewController<PhotoStreamView> {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setupNavigation()
     }
 }
 
-// MARK: - Setup
+// MARK: - Navigation
 
-private extension FilterViewController {
-    
-    func setup() {
-        setupNavigation()
-    }
+private extension PhotoStreamViewController {
     
     func setupNavigation() {
         guard let navigationBar = navigationController?.navigationBar else { return }

@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0413A76F28DDC47E008F8186 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0413A76E28DDC47E008F8186 /* SnapKit */; };
+		0413A77128DE14A2008F8186 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413A77028DE14A2008F8186 /* PinterestLayout.swift */; };
 		041EB74428DDAD94003D89E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB74328DDAD94003D89E1 /* AppDelegate.swift */; };
 		041EB74628DDAD95003D89E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB74528DDAD95003D89E1 /* SceneDelegate.swift */; };
-		041EB74828DDAD95003D89E1 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB74728DDAD95003D89E1 /* FilterViewController.swift */; };
+		041EB74828DDAD95003D89E1 /* PhotoStreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB74728DDAD95003D89E1 /* PhotoStreamViewController.swift */; };
 		041EB74D28DDAD95003D89E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041EB74C28DDAD95003D89E1 /* Assets.xcassets */; };
 		041EB75028DDAD95003D89E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041EB74E28DDAD95003D89E1 /* LaunchScreen.storyboard */; };
 		041EB77928DDB009003D89E1 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76228DDB009003D89E1 /* UIColor+Hex.swift */; };
@@ -28,15 +29,19 @@
 		041EB78528DDB009003D89E1 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB77328DDB009003D89E1 /* BaseCollectionViewCell.swift */; };
 		041EB78628DDB009003D89E1 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB77428DDB009003D89E1 /* BaseTableView.swift */; };
 		041EB78728DDB009003D89E1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB77528DDB009003D89E1 /* BaseView.swift */; };
-		041EB78928DDB0B4003D89E1 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB78828DDB0B4003D89E1 /* FilterView.swift */; };
+		041EB78928DDB0B4003D89E1 /* PhotoStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */; };
 		041EB78C28DDB231003D89E1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB78B28DDB231003D89E1 /* Colors.swift */; };
+		0468A59328E0A0AE00354EF9 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0468A59228E0A0AE00354EF9 /* Photos.xcassets */; };
+		0468A59728E0A3CB00354EF9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59628E0A3CB00354EF9 /* Photo.swift */; };
+		0468A59928E0A98E00354EF9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0413A77028DE14A2008F8186 /* PinterestLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayout.swift; sourceTree = "<group>"; };
 		041EB74028DDAD94003D89E1 /* blur-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "blur-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041EB74328DDAD94003D89E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041EB74528DDAD95003D89E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		041EB74728DDAD95003D89E1 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		041EB74728DDAD95003D89E1 /* PhotoStreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamViewController.swift; sourceTree = "<group>"; };
 		041EB74C28DDAD95003D89E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041EB74F28DDAD95003D89E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041EB75128DDAD95003D89E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +60,11 @@
 		041EB77328DDB009003D89E1 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		041EB77428DDB009003D89E1 /* BaseTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		041EB77528DDB009003D89E1 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
-		041EB78828DDB0B4003D89E1 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamView.swift; sourceTree = "<group>"; };
 		041EB78B28DDB231003D89E1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		0468A59228E0A0AE00354EF9 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
+		0468A59628E0A3CB00354EF9 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,10 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0413A77228DE4C43008F8186 /* PhotoStream */ = {
+			isa = PBXGroup;
+			children = (
+				0468A59528E0A3C200354EF9 /* Model */,
+				0468A59428E0A0E600354EF9 /* View */,
+			);
+			path = PhotoStream;
+			sourceTree = "<group>";
+		};
 		041EB73728DDAD94003D89E1 = {
 			isa = PBXGroup;
 			children = (
 				041EB74228DDAD94003D89E1 /* blur-task */,
+				041EB75B28DDAFF8003D89E1 /* Helpers */,
 				041EB74128DDAD94003D89E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,7 +120,6 @@
 			children = (
 				041EB75828DDAE38003D89E1 /* Application */,
 				041EB75928DDAE3F003D89E1 /* Modules */,
-				041EB75B28DDAFF8003D89E1 /* Helpers */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -119,7 +136,7 @@
 		041EB75928DDAE3F003D89E1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				041EB78A28DDB0FA003D89E1 /* Filter */,
+				0413A77228DE4C43008F8186 /* PhotoStream */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -129,6 +146,7 @@
 			children = (
 				041EB78B28DDB231003D89E1 /* Colors.swift */,
 				041EB74C28DDAD95003D89E1 /* Assets.xcassets */,
+				0468A59228E0A0AE00354EF9 /* Photos.xcassets */,
 				041EB74E28DDAD95003D89E1 /* LaunchScreen.storyboard */,
 			);
 			path = "Resources ";
@@ -212,13 +230,31 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		041EB78A28DDB0FA003D89E1 /* Filter */ = {
+		0468A59128E09D5800354EF9 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
-				041EB74728DDAD95003D89E1 /* FilterViewController.swift */,
-				041EB78828DDB0B4003D89E1 /* FilterView.swift */,
+				0413A77028DE14A2008F8186 /* PinterestLayout.swift */,
 			);
-			path = Filter;
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		0468A59428E0A0E600354EF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041EB74728DDAD95003D89E1 /* PhotoStreamViewController.swift */,
+				041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */,
+				0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */,
+				0468A59128E09D5800354EF9 /* Layout */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0468A59528E0A3C200354EF9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0468A59628E0A3CB00354EF9 /* Photo.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0468A59328E0A0AE00354EF9 /* Photos.xcassets in Resources */,
 				041EB75028DDAD95003D89E1 /* LaunchScreen.storyboard in Resources */,
 				041EB74D28DDAD95003D89E1 /* Assets.xcassets in Resources */,
 			);
@@ -300,12 +337,14 @@
 				041EB77C28DDB009003D89E1 /* UIView+addSubviews.swift in Sources */,
 				041EB78C28DDB231003D89E1 /* Colors.swift in Sources */,
 				041EB77D28DDB009003D89E1 /* ReuseIdentifiable.swift in Sources */,
+				0413A77128DE14A2008F8186 /* PinterestLayout.swift in Sources */,
 				041EB77928DDB009003D89E1 /* UIColor+Hex.swift in Sources */,
 				041EB78628DDB009003D89E1 /* BaseTableView.swift in Sources */,
 				041EB78428DDB009003D89E1 /* BaseTableViewCell.swift in Sources */,
 				041EB77F28DDB009003D89E1 /* UICollectionView+ReuseId.swift in Sources */,
 				041EB78228DDB009003D89E1 /* BaseCollectionView.swift in Sources */,
-				041EB74828DDAD95003D89E1 /* FilterViewController.swift in Sources */,
+				0468A59928E0A98E00354EF9 /* PhotoCollectionViewCell.swift in Sources */,
+				041EB74828DDAD95003D89E1 /* PhotoStreamViewController.swift in Sources */,
 				041EB78328DDB009003D89E1 /* BaseViewController.swift in Sources */,
 				041EB78128DDB009003D89E1 /* FunctionalWrapper.swift in Sources */,
 				041EB78528DDB009003D89E1 /* BaseCollectionViewCell.swift in Sources */,
@@ -314,7 +353,8 @@
 				041EB74628DDAD95003D89E1 /* SceneDelegate.swift in Sources */,
 				041EB77A28DDB009003D89E1 /* UIColor+Dynamic.swift in Sources */,
 				041EB77E28DDB009003D89E1 /* UITableView+ReuseId.swift in Sources */,
-				041EB78928DDB0B4003D89E1 /* FilterView.swift in Sources */,
+				0468A59728E0A3CB00354EF9 /* Photo.swift in Sources */,
+				041EB78928DDB0B4003D89E1 /* PhotoStreamView.swift in Sources */,
 				041EB78728DDB009003D89E1 /* BaseView.swift in Sources */,
 				041EB77B28DDB009003D89E1 /* UIColor+Blend.swift in Sources */,
 			);
