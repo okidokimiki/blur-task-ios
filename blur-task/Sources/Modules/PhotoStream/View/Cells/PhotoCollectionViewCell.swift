@@ -8,6 +8,10 @@ final class PhotoCollectionViewCell: BaseCollectionViewCell {
         $0.clipsToBounds = true
     }
     
+    override var isHighlighted: Bool {
+        didSet { animateTransformCell(during: 0.15, dx: 1.05, dy: 1.05) }
+    }
+    
     override func layout() {
         super.layout()
         addSubviews(imageView)

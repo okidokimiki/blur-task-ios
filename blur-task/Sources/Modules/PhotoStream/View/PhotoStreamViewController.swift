@@ -37,12 +37,12 @@ private extension PhotoStreamViewController {
     }
 }
 
-//#if DEBUG
-//import SwiftUI
-//
-//struct ViewController_Preview: PreviewProvider {
-//    static var previews: some View {
-//        PhotoStreamViewController().showPreview().ignoresSafeArea(.all)
-//    }
-//}
-//#endif
+#if DEBUG
+import SwiftUI
+
+struct ViewController_Preview: PreviewProvider {
+    static var previews: some View {
+        PhotoStreamViewController().showPreview().ignoresSafeArea(.all)
+    }
+}
+#endif
