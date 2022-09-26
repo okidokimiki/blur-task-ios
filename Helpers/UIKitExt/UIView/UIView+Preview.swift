@@ -7,7 +7,9 @@ import SwiftUI
  *
  * struct View_Preview: PreviewProvider {
  *     static var previews: some View {
- *         YourView().showPreview().ignoresSafeArea(.all)
+ *         YourView()
+ *             .showPreview()
+ *             .ignoresSafeArea(.all)
  *     }
  * }
  * #endif

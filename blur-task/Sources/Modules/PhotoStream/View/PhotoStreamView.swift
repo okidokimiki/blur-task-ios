@@ -70,7 +70,9 @@ extension PhotoStreamView: PinterestLayoutDelegate {
 //
 //struct View_Preview: PreviewProvider {
 //    static var previews: some View {
-//        PhotoStreamView().showPreview().ignoresSafeArea(.all)
+//        PhotoStreamView()
+//            .showPreview()
+//            .ignoresSafeArea(.all)
 //    }
 //}
 //#endif
