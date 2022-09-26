@@ -19,11 +19,6 @@ final class PhotoStreamView: BaseView {
         $0.register(PhotoCollectionViewCell.self)
     }
     
-    override func setup() {
-        super.setup()
-        backgroundColor = .background
-    }
-    
     override func layout() {
         super.layout()
         addSubviews(photosCollectionView)
