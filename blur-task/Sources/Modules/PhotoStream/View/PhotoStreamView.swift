@@ -59,10 +59,8 @@ extension PhotoStreamView: PinterestLayoutDelegate {
     
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: IndexPath, withWidth width: CGFloat) -> CGFloat {
         guard let image = photos[indexPath.item].image else { return .zero }
-        
         let boundingRect = CGRect(x: 0, y: 0, width: width, height: .infinity)
         let rect = AVMakeRect(aspectRatio: image.size, insideRect: boundingRect)
-        
         return rect.size.height
     }
 }
