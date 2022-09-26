@@ -105,7 +105,7 @@
 		041EB73728DDAD94003D89E1 = {
 			isa = PBXGroup;
 			children = (
-				041EB74228DDAD94003D89E1 /* blur-task */,
+				041EB74228DDAD94003D89E1 /* Task */,
 				041EB75B28DDAFF8003D89E1 /* Helpers */,
 				041EB74128DDAD94003D89E1 /* Products */,
 			);
@@ -119,14 +119,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		041EB74228DDAD94003D89E1 /* blur-task */ = {
+		041EB74228DDAD94003D89E1 /* Task */ = {
 			isa = PBXGroup;
 			children = (
 				041EB75728DDAE2A003D89E1 /* Sources */,
 				041EB75A28DDAE5B003D89E1 /* Resources  */,
 				041EB75128DDAD95003D89E1 /* Info.plist */,
 			);
-			path = "blur-task";
+			path = Task;
 			sourceTree = "<group>";
 		};
 		041EB75728DDAE2A003D89E1 /* Sources */ = {
