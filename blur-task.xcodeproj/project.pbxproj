@@ -36,6 +36,8 @@
 		0468A59928E0A98E00354EF9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */; };
 		0468A59B28E0BE7400354EF9 /* UIImage+Resized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59A28E0BE7400354EF9 /* UIImage+Resized.swift */; };
 		0468A5A028E0FD4D00354EF9 /* UIImageView+AspectSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59F28E0FD4D00354EF9 /* UIImageView+AspectSizes.swift */; };
+		0468A5AC28E1B57400354EF9 /* UIViewController+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A5AB28E1B57300354EF9 /* UIViewController+Preview.swift */; };
+		0468A5AE28E1B64500354EF9 /* UIView+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A5AD28E1B64500354EF9 /* UIView+Preview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		0468A59A28E0BE7400354EF9 /* UIImage+Resized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resized.swift"; sourceTree = "<group>"; };
 		0468A59F28E0FD4D00354EF9 /* UIImageView+AspectSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AspectSizes.swift"; sourceTree = "<group>"; };
+		0468A5AB28E1B57300354EF9 /* UIViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Preview.swift"; sourceTree = "<group>"; };
+		0468A5AD28E1B64500354EF9 /* UIView+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Preview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +173,7 @@
 		041EB76028DDB009003D89E1 /* UIKitExt */ = {
 			isa = PBXGroup;
 			children = (
+				0468A5AF28E1B66300354EF9 /* UIViewController */,
 				0468A5A128E0FD5700354EF9 /* UIImageView */,
 				0468A59C28E0BFB200354EF9 /* UIImage */,
 				041EB76128DDB009003D89E1 /* UIColor */,
@@ -191,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				041EB76628DDB009003D89E1 /* UIView+AddSubviews.swift */,
+				0468A5AD28E1B64500354EF9 /* UIView+Preview.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -287,6 +293,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		0468A5AF28E1B66300354EF9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0468A5AB28E1B57300354EF9 /* UIViewController+Preview.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,7 +394,9 @@
 				041EB78328DDB009003D89E1 /* BaseViewController.swift in Sources */,
 				041EB78128DDB009003D89E1 /* FunctionalWrapper.swift in Sources */,
 				041EB78528DDB009003D89E1 /* BaseCollectionViewCell.swift in Sources */,
+				0468A5AE28E1B64500354EF9 /* UIView+Preview.swift in Sources */,
 				041EB78028DDB009003D89E1 /* Appliable.swift in Sources */,
+				0468A5AC28E1B57400354EF9 /* UIViewController+Preview.swift in Sources */,
 				041EB74428DDAD94003D89E1 /* AppDelegate.swift in Sources */,
 				041EB74628DDAD95003D89E1 /* SceneDelegate.swift in Sources */,
 				041EB77A28DDB009003D89E1 /* UIColor+Dynamic.swift in Sources */,

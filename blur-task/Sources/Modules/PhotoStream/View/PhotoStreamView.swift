@@ -64,3 +64,13 @@ extension PhotoStreamView: PinterestLayoutDelegate {
         return rect.size.height
     }
 }
+
+//#if DEBUG
+//import SwiftUI
+//
+//struct View_Preview: PreviewProvider {
+//    static var previews: some View {
+//        PhotoStreamView().showPreview().ignoresSafeArea(.all)
+//    }
+//}
+//#endif
