@@ -11,6 +11,7 @@ final class PhotoStreamView: BaseView {
         if let layout = $0.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
         }
+        $0.contentInset = .init(top: 0, left: 8, bottom: 0, right: 8)
         $0.backgroundColor = .none
         $0.delegate = self
         $0.dataSource = self

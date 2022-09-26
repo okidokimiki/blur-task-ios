@@ -4,7 +4,7 @@ final class PhotoStreamViewController: BaseViewController<PhotoStreamView> {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigationBar()
+        setupNavigationBarItems()
     }
 }
 
@@ -12,9 +12,7 @@ final class PhotoStreamViewController: BaseViewController<PhotoStreamView> {
 
 private extension PhotoStreamViewController {
     
-    func setupNavigationBar() {
-        guard let navigationBar = navigationController?.navigationBar else { return }
-        
+    func setupNavigationBarItems() {
         lazy var leftLabel = UILabel().do {
             $0.text = "Filters"
             $0.textColor = .title
@@ -28,23 +26,22 @@ private extension PhotoStreamViewController {
             $0.layer.cornerRadius = height / 2
             $0.backgroundColor = .secondary
             $0.tintColor = .details
-            $0.setImage(UIImage(systemName: "gearshape.fill"), for: .normal)
+            $0.setImage(UI.SFSymbol.gearshapeFill, for: .normal)
         }
         
-        navigationBar.isTranslucent = true
         navigationItem.leftBarButtonItem = .init(customView: leftLabel)
         navigationItem.rightBarButtonItem = .init(customView: rightButton)
     }
 }
 
-#if DEBUG
-import SwiftUI
-
-struct ViewController_Preview: PreviewProvider {
-    static var previews: some View {
-        PhotoStreamViewController()
-            .showPreview()
-            .ignoresSafeArea(.all)
-    }
-}
-#endif
+//#if DEBUG
+//import SwiftUI
+//
+//struct ViewController_Preview: PreviewProvider {
+//    static var previews: some View {
+//        PhotoStreamViewController()
+//            .showPreview()
+//            .ignoresSafeArea(.all)
+//    }
+//}
+//#endif

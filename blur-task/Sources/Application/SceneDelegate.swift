@@ -3,13 +3,16 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
+    var navigationController: UINavigationController?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        navigationController = .translucentNavigationController()
+        navigationController?.pushViewController(PhotoStreamViewController(), animated: false)
+        
         window = UIWindow(windowScene: windowScene)
-        #warning("Не нравится кол-во скобок. Мб можно как-то вынести UINavigationController в проперти?")
-        window?.rootViewController = UINavigationController(rootViewController: PhotoStreamViewController())
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
 }
