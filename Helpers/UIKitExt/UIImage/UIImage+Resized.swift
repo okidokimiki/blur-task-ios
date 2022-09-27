@@ -11,7 +11,7 @@ extension UIImage {
     func resized(to size: CGSize) -> UIImage {
         let rect = CGRect(origin: .zero, size: size)
         guard #available(iOS 10.0, *) else {
-            UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
+            UIGraphicsBeginImageContextWithOptions(size, false, .zero)
             defer { UIGraphicsEndImageContext() }
             draw(in: rect)
             

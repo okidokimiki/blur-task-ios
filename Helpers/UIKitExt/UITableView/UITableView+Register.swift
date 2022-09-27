@@ -1,7 +1,6 @@
 import UIKit
 
 extension UITableViewCell: ReuseIdentifiable, NibLoadableView { }
-extension UITableViewHeaderFooterView: ReuseIdentifiable, NibLoadableView { }
 
 extension UITableView {
     
@@ -28,6 +27,8 @@ extension UITableView {
 
     }
 }
+
+extension UITableViewHeaderFooterView: ReuseIdentifiable, NibLoadableView { }
 
 extension UITableView {
     
