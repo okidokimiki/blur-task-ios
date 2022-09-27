@@ -174,8 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				041EB76F28DDB009003D89E1 /* Base */,
-				043050E928E34E000024BB57 /* Protocols */,
 				041EB76028DDB009003D89E1 /* UIKitExt */,
+				043050E928E34E000024BB57 /* Protocols */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
