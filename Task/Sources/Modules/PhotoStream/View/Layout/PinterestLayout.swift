@@ -26,7 +26,7 @@ final class PinterestLayout: UICollectionViewLayout {
     }
     
     private var contentWidth: CGFloat {
-        guard let collectionView = collectionView else { return .zero }
+        guard let collectionView else { return .zero }
         let insets = collectionView.contentInset
         return collectionView.bounds.width - (insets.left + insets.right)
     }
@@ -36,7 +36,7 @@ final class PinterestLayout: UICollectionViewLayout {
     }
     
     override func prepare() {
-        guard cache.isEmpty, let collectionView = collectionView else { return }
+        guard cache.isEmpty, let collectionView else { return }
         
         var xOffset: [CGFloat] = []
         var yOffset: [CGFloat] = .init(repeating: 0.0, count: numberOfColumns)
