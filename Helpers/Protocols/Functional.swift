@@ -36,7 +36,7 @@ import Foundation
 
 protocol FunctionalWrapper { }
 
-extension FunctionalWrapper {
+extension FunctionalWrapper where Self: AnyObject {
     
     /// Makes it available to set properties with closures just after initializing
     /// ```
