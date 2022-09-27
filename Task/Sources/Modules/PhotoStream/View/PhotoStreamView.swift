@@ -31,7 +31,35 @@ final class PhotoStreamView: BaseView {
 
 // MARK: - UICollectionViewDelegate
 
-extension PhotoStreamView: UICollectionViewDelegate { }
+extension PhotoStreamView: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, contextMenuConfigurationForItemsAt indexPaths: [IndexPath], point: CGPoint) -> UIContextMenuConfiguration? {
+        guard let indexPath = indexPaths.first else { return nil }
+        
+        let config = UIContextMenuConfiguration(actionProvider: { _ in
+            let open = UIAction(
+                title: "Open",
+                image: UI.SFSymbol.link) { _ in
+                    print("Did Tap open")
+                }
+            
+            let faforite = UIAction(
+                title: "Add to faforite",
+                image: UI.SFSymbol.star) { _ in
+                    print("Did Tap faforite")
+                }
+            
+            let menu = UIMenu(
+                title: self.photos[indexPath.item].name,
+                children: [open, faforite]
+            )
+            
+            return menu
+        })
+        
+        return config
+    }
+}
 
 // MARK: - UICollectionViewDataSource
 
