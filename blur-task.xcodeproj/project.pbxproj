@@ -17,7 +17,7 @@
 		041EB77928DDB009003D89E1 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76228DDB009003D89E1 /* UIColor+Hex.swift */; };
 		041EB77A28DDB009003D89E1 /* UIColor+Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76328DDB009003D89E1 /* UIColor+Dynamic.swift */; };
 		041EB77B28DDB009003D89E1 /* UIColor+Blend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76428DDB009003D89E1 /* UIColor+Blend.swift */; };
-		041EB77C28DDB009003D89E1 /* UIView+AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76628DDB009003D89E1 /* UIView+AddSubviews.swift */; };
+		041EB77C28DDB009003D89E1 /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76628DDB009003D89E1 /* UIView+Subviews.swift */; };
 		041EB77D28DDB009003D89E1 /* ReuseIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76928DDB009003D89E1 /* ReuseIdentifiable.swift */; };
 		041EB77E28DDB009003D89E1 /* UITableView+ReuseId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76A28DDB009003D89E1 /* UITableView+ReuseId.swift */; };
 		041EB77F28DDB009003D89E1 /* UICollectionView+ReuseId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB76B28DDB009003D89E1 /* UICollectionView+ReuseId.swift */; };
@@ -55,7 +55,7 @@
 		041EB76228DDB009003D89E1 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		041EB76328DDB009003D89E1 /* UIColor+Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Dynamic.swift"; sourceTree = "<group>"; };
 		041EB76428DDB009003D89E1 /* UIColor+Blend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Blend.swift"; sourceTree = "<group>"; };
-		041EB76628DDB009003D89E1 /* UIView+AddSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddSubviews.swift"; sourceTree = "<group>"; };
+		041EB76628DDB009003D89E1 /* UIView+Subviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
 		041EB76928DDB009003D89E1 /* ReuseIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiable.swift; sourceTree = "<group>"; };
 		041EB76A28DDB009003D89E1 /* UITableView+ReuseId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReuseId.swift"; sourceTree = "<group>"; };
 		041EB76B28DDB009003D89E1 /* UICollectionView+ReuseId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReuseId.swift"; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 		041EB76528DDB009003D89E1 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				041EB76628DDB009003D89E1 /* UIView+AddSubviews.swift */,
+				041EB76628DDB009003D89E1 /* UIView+Subviews.swift */,
 				0468A5AD28E1B64500354EF9 /* UIView+Preview.swift */,
 			);
 			path = UIView;
@@ -419,7 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041EB77C28DDB009003D89E1 /* UIView+AddSubviews.swift in Sources */,
+				041EB77C28DDB009003D89E1 /* UIView+Subviews.swift in Sources */,
 				041EB78C28DDB231003D89E1 /* UIColor.swift in Sources */,
 				041EB77D28DDB009003D89E1 /* ReuseIdentifiable.swift in Sources */,
 				0413A77128DE14A2008F8186 /* PinterestLayout.swift in Sources */,
