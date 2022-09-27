@@ -31,6 +31,7 @@
 		041EB78728DDB009003D89E1 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB77528DDB009003D89E1 /* BaseView.swift */; };
 		041EB78928DDB0B4003D89E1 /* PhotoStreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */; };
 		041EB78C28DDB231003D89E1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041EB78B28DDB231003D89E1 /* UIColor.swift */; };
+		043050E328E330FA0024BB57 /* UIViewController+Childs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043050E228E330FA0024BB57 /* UIViewController+Childs.swift */; };
 		0468A59328E0A0AE00354EF9 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0468A59228E0A0AE00354EF9 /* Photos.xcassets */; };
 		0468A59728E0A3CB00354EF9 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59628E0A3CB00354EF9 /* Photo.swift */; };
 		0468A59928E0A98E00354EF9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */; };
@@ -69,6 +70,7 @@
 		041EB77528DDB009003D89E1 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStreamView.swift; sourceTree = "<group>"; };
 		041EB78B28DDB231003D89E1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		043050E228E330FA0024BB57 /* UIViewController+Childs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Childs.swift"; sourceTree = "<group>"; };
 		0468A59228E0A0AE00354EF9 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		0468A59628E0A3CB00354EF9 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		0468A59828E0A98E00354EF9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				0468A5AB28E1B57300354EF9 /* UIViewController+Preview.swift */,
+				043050E228E330FA0024BB57 /* UIViewController+Childs.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				0413A77128DE14A2008F8186 /* PinterestLayout.swift in Sources */,
 				0472D8D928E20191005BF806 /* UICollectionViewCell+Animate.swift in Sources */,
 				0472D8DD28E21F1B005BF806 /* UINavigationController.swift in Sources */,
+				043050E328E330FA0024BB57 /* UIViewController+Childs.swift in Sources */,
 				041EB77928DDB009003D89E1 /* UIColor+Hex.swift in Sources */,
 				0468A59B28E0BE7400354EF9 /* UIImage+Resized.swift in Sources */,
 				041EB78628DDB009003D89E1 /* BaseTableView.swift in Sources */,
