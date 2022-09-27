@@ -6,10 +6,10 @@ extension UICollectionReusableView: ReuseIdentifiable { }
 
 extension UICollectionView {
     
-    func dequeueCell<Cell: UICollectionViewCell>(cellType: Cell.Type, for indexPath: IndexPath) -> Cell {
-        guard let cell = dequeueReusableCell(withReuseIdentifier: cellType.reuseIdentifier, for: indexPath) as? Cell else {
+    func dequeueCell<Cell: UICollectionViewCell>(for indexPath: IndexPath) -> Cell {
+        guard let cell = dequeueReusableCell(withReuseIdentifier: Cell.reuseIdentifier, for: indexPath) as? Cell else {
             fatalError(
-                "Can't dequeue a cell with identifier \(cellType.reuseIdentifier) matching type \(cellType.self). "
+                "Can't dequeue a cell with identifier \(Cell.reuseIdentifier) matching type \(Cell.self). "
                 + "Check that the reuseIdentifier is set properly in your XIB/Storyboard "
                 + "and that you registered the cell beforehand"
             )
@@ -34,11 +34,11 @@ extension UICollectionView {
 
 extension UICollectionView {
     
-    func dequeueView<View: UICollectionReusableView>(viewType: View.Type, for indexPath: IndexPath) -> View {
+    func dequeueView<View: UICollectionReusableView>(for indexPath: IndexPath) -> View {
         guard let view = dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
-                                                          withReuseIdentifier: viewType.reuseIdentifier,
+                                                          withReuseIdentifier: View.reuseIdentifier,
                                                           for: indexPath) as? View else {
-            fatalError("Can't dequeue a view with identifier \(viewType.reuseIdentifier) matching type \(viewType.self)")
+            fatalError("Can't dequeue a view with identifier \(View.reuseIdentifier) matching type \(View.self)")
         }
         
         return view

@@ -8,10 +8,10 @@ extension UITableViewHeaderFooterView: ReuseIdentifiable { }
 
 extension UITableView {
     
-    func dequeueCell<Cell: UITableViewCell>(cellType: Cell.Type) -> Cell {
-        guard let cell = dequeueReusableCell(withIdentifier: cellType.reuseIdentifier) as? Cell else {
+    func dequeueCell<Cell: UITableViewCell>() -> Cell {
+        guard let cell = dequeueReusableCell(withIdentifier: Cell.reuseIdentifier) as? Cell else {
             fatalError(
-                "Can't dequeue a cell with identifier \(cellType.reuseIdentifier) matching type \(cellType.self). "
+                "Can't dequeue a cell with identifier \(Cell.reuseIdentifier) matching type \(Cell.self). "
                     + "Check that the reuseIdentifier is set properly in your XIB/Storyboard "
                     + "and that you registered the cell beforehand"
             )
@@ -36,10 +36,10 @@ extension UITableView {
 
 extension UITableView {
     
-    func dequeueCell<View: UITableViewHeaderFooterView>(viewType: View.Type) -> View {
-        guard let view = dequeueReusableHeaderFooterView(withIdentifier: viewType.reuseIdentifier) as? View else {
+    func dequeueCell<View: UITableViewHeaderFooterView>() -> View {
+        guard let view = dequeueReusableHeaderFooterView(withIdentifier: View.reuseIdentifier) as? View else {
             fatalError(
-                "Can't dequeue a header/footer view with identifier \(viewType.reuseIdentifier) matching type \(viewType.self)"
+                "Can't dequeue a header/footer view with identifier \(View.reuseIdentifier) matching type \(View.self)"
             )
         }
         

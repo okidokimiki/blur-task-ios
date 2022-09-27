@@ -70,7 +70,7 @@ extension PhotoStreamView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueCell(cellType: PhotoCollectionViewCell.self, for: indexPath)
+        let cell: PhotoCollectionViewCell = collectionView.dequeueCell(for: indexPath)
         cell.configure(with: photos[indexPath.item])
         
         return cell
