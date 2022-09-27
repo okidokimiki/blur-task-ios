@@ -14,7 +14,7 @@ final class PhotoCollectionViewCell: BaseCollectionViewCell {
     
     override func layout() {
         super.layout()
-        addSubviews(imageView)
+        contentView.addSubviews(imageView)
         imageView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
     
