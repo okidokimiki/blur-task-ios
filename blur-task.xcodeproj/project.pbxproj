@@ -175,6 +175,7 @@
 		041EB75B28DDAFF8003D89E1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				041EB76E28DDB009003D89E1 /* Functional.swift */,
 				041EB76F28DDB009003D89E1 /* Base */,
 				041EB76028DDB009003D89E1 /* UIKitExt */,
 				043050E928E34E000024BB57 /* Protocols */,
@@ -244,7 +245,6 @@
 			children = (
 				043050EA28E34E110024BB57 /* NibLoadableView.swift */,
 				041EB76928DDB009003D89E1 /* ReuseIdentifiable.swift */,
-				041EB76E28DDB009003D89E1 /* Functional.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
