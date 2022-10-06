@@ -1,19 +1,18 @@
 import SwiftUI
 
-/**
- * ```
- * #if DEBUG
- * import SwiftUI
- *
- * struct View_Preview: PreviewProvider {
- *     static var previews: some View {
- *         YourView()
- *             .showPreview()
- *             .ignoresSafeArea(.all)
- *     }
- * }
- * #endif
- * ```
+/** ```
+ #if DEBUG
+ import SwiftUI
+ 
+ struct View_Preview: PreviewProvider {
+     static var previews: some View {
+         YourView()
+             .showPreview()
+             .ignoresSafeArea(.all)
+     }
+ }
+ #endif
+ ```
  */
 
 #if DEBUG

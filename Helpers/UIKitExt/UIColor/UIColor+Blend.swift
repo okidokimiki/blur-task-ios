@@ -1,24 +1,24 @@
 import UIKit
 
 /** With this extension you can blend colors like this:
- * ```
- * // Make orange with 50% red and 50% yellow
- * let orange = .red * 0.5 + .yellow * 0.5
- *
- * // Make light gray with 25% black and 75% white
- * let lightGray = .black * 0.25 + .white * 0.75
- *
- * // Make sky blue by lightening a combination of 25% blue and 75% cyan
- * let skyBlue = (.blue * 0.25 + .cyan * 0.75) * 0.25 + .white * 0.75
- *
- * // Make dark red by combining 50% red and 50% black
- * let darkRed = .red * 0.50 + .black * 0.50
- *
- * // Make purple from 60% blue and 40% red
- * let purple = (.blue * 0.60 + .red * 0.40)
- *
- * // Then make lavender from 25% purple and 75% white
- * let lavender = purple * 0.25 + .white * 0.75
+ ```
+ // Make orange with 50% red and 50% yellow
+ let orange = .red * 0.5 + .yellow * 0.5
+ 
+ // Make light gray with 25% black and 75% white
+ let lightGray = .black * 0.25 + .white * 0.75
+ 
+ // Make sky blue by lightening a combination of 25% blue and 75% cyan
+ let skyBlue = (.blue * 0.25 + .cyan * 0.75) * 0.25 + .white * 0.75
+ 
+ // Make dark red by combining 50% red and 50% black
+ let darkRed = .red * 0.50 + .black * 0.50
+ 
+ // Make purple from 60% blue and 40% red
+ let purple = (.blue * 0.60 + .red * 0.40)
+ 
+ // Then make lavender from 25% purple and 75% white
+ let lavender = purple * 0.25 + .white * 0.75
  */
 
 extension UIColor {

@@ -1,22 +1,19 @@
 import SwiftUI
 
-/**
- * ```
- * #if DEBUG
- * import SwiftUI
- *
- * struct ViewController_Preview: PreviewProvider {
- *     static var previews: some View {
- *         YourViewController()
- *             .showPreview()
- *             .ignoresSafeArea(.all)
- *     }
- * }
- * #endif
- * ```
+/**```
+ #if DEBUG
+ import SwiftUI
+ 
+ struct ViewController_Preview: PreviewProvider {
+     static var previews: some View {
+         YourViewController()
+             .showPreview()
+             .ignoresSafeArea(.all)
+     }
+ }
+ #endif
+ ```
  */
-
-// cool-staff: https://useyourloaf.com/blog/xcode-previews-for-view-controllers/
 
 #if DEBUG
 extension UIViewController {

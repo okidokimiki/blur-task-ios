@@ -22,9 +22,6 @@ extension UIImage {
             return self
         }
         
-        let renderer = UIGraphicsImageRenderer(size: size)
-        return renderer.image { _ in
-            draw(in: rect)
-        }
+        return UIGraphicsImageRenderer(size: size).image { _ in draw(in: rect) }
     }
 }

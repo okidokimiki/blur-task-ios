@@ -4,7 +4,6 @@ import AVFoundation
 
 final class PhotoStreamView: BaseView {
     
-    #warning("Это должно быть в viewModel")
     private var photos: [Photo] = Photo.allPhotos()
     
     private(set) lazy var photosCollectionView = BaseCollectionView(layout: PinterestLayout.self).do {
@@ -73,7 +72,7 @@ extension PhotoStreamView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: PhotoCollectionViewCell = collectionView.dequeueCell(for: indexPath)
+        let cell: PhotoCollectionViewCell = collectionView.reuse(for: indexPath)
         cell.configure(with: photos[indexPath.item])
         
         return cell
