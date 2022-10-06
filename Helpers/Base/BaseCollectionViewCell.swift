@@ -4,19 +4,26 @@ class BaseCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
-        layout()
+        initialize()
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
-        layout()
+    }
+    
+    func initialize() {
+        setUpConfig()
+        addSubviews()
+        setUpConstraints()
     }
     
     /// Customize your collection view cell here
-    func setup() { }
+    func setUpConfig() { }
     
-    /// Add and Layout your subviews here
-    func layout() { }
+    /// Add your subviews here
+    func addSubviews() { }
+    
+    /// Layout constraints your subviews here
+    func setUpConstraints() { }
 }

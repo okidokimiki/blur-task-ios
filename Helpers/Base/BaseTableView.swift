@@ -2,18 +2,22 @@ import UIKit
 
 class BaseTableView: UITableView {
     
-    override init(frame: CGRect, style: UITableView.Style) {
-        super.init(frame: frame, style: style)
-        setup()
+    init(style: UITableView.Style = .plain) {
+        super.init(frame: .zero, style: style)
+        initialize()
     }
-
+    
+    @available(*, unavailable)
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        setup()
+    }
+    
+    func initialize() {
+        setUpConfig()
     }
     
     /// Customize your table view here
-    func setup() {
+    func setUpConfig() {
         separatorStyle = .none
     }
 }

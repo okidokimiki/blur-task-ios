@@ -4,7 +4,7 @@ struct Photo {
     let image: UIImage?
     let name: String
     
-    static func allPhotos() -> [Photo] {
+    static func allPhotos() -> [Self] {
         [Photo(image: UIImage(named: "01"), name: "Shanks"),
          Photo(image: UIImage(named: "02"), name: "Japan Car"),
          Photo(image: UIImage(named: "03"), name: "Monkey D. Luffy"),

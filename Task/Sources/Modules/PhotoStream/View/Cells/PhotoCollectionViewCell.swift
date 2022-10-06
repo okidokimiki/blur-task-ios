@@ -12,9 +12,13 @@ final class PhotoCollectionViewCell: BaseCollectionViewCell {
         didSet { animateTransformCell(during: 0.15, dx: 1.05, dy: 1.05) }
     }
     
-    override func layout() {
-        super.layout()
+    override func addSubviews() {
+        super.addSubviews()
         contentView.addSubviews(imageView)
+    }
+    
+    override func setUpConstraints() {
+        super.setUpConstraints()
         imageView.snp.makeConstraints { $0.edges.equalToSuperview() }
     }
     

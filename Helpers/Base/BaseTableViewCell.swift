@@ -4,21 +4,28 @@ class BaseTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setup()
-        layout()
+        initialize()
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setup()
-        layout()
+    }
+    
+    func initialize() {
+        setUpConfig()
+        addSubviews()
+        setUpConstraints()
     }
     
     /// Customize your table view cell here
-    func setup() {
+    func setUpConfig() {
         selectionStyle = .none
     }
     
-    /// Add and Layout your subviews here
-    func layout() { }
+    /// Add your subviews here
+    func addSubviews() { }
+    
+    /// Layout constraints your subviews here
+    func setUpConstraints() { }
 }

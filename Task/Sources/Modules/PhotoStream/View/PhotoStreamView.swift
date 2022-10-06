@@ -19,9 +19,12 @@ final class PhotoStreamView: BaseView {
         $0.register(PhotoCollectionViewCell.self)
     }
     
-    override func layout() {
-        super.layout()
+    override func addSubviews() {
+        super.addSubviews()
         addSubviews(photosCollectionView)
+    }
+    
+    override func setUpConstraints() {
         photosCollectionView.snp.makeConstraints { make in
             make.top.equalTo(safeAreaLayoutGuide.snp.top)
             make.left.right.bottom.equalToSuperview()
@@ -88,15 +91,3 @@ extension PhotoStreamView: PinterestLayoutDelegate {
         return rect.size.height
     }
 }
-
-//#if DEBUG
-//import SwiftUI
-//
-//struct View_Preview: PreviewProvider {
-//    static var previews: some View {
-//        PhotoStreamView()
-//            .showPreview()
-//            .ignoresSafeArea(.all)
-//    }
-//}
-//#endif
