@@ -151,7 +151,7 @@
 			children = (
 				041EB75828DDAE38003D89E1 /* Application */,
 				0472D8DA28E21EF5005BF806 /* Services */,
-				041EB75928DDAE3F003D89E1 /* Modules */,
+				041EB75928DDAE3F003D89E1 /* Scenes */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -165,12 +165,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		041EB75928DDAE3F003D89E1 /* Modules */ = {
+		041EB75928DDAE3F003D89E1 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
 				0413A77228DE4C43008F8186 /* PhotoStream */,
 			);
-			path = Modules;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		041EB75A28DDAE5B003D89E1 /* Resources  */ = {
@@ -196,7 +196,6 @@
 			children = (
 				041EB74728DDAD95003D89E1 /* PhotoStreamViewController.swift */,
 				041EB78828DDB0B4003D89E1 /* PhotoStreamView.swift */,
-				0468A59128E09D5800354EF9 /* Layout */,
 				0468A5A228E105FB00354EF9 /* Cells */,
 			);
 			path = View;
@@ -238,8 +237,8 @@
 		0472D8DE28E221E5005BF806 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0472D8DC28E21F1B005BF806 /* UINavigationController.swift */,
 				041EB78B28DDB231003D89E1 /* UIColor.swift */,
+				0472D8DC28E21F1B005BF806 /* UINavigationController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +257,7 @@
 		0477CAC428EF852800AA014B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0468A59128E09D5800354EF9 /* Layout */,
 				0477CAC728EF852800AA014B /* Base */,
 			);
 			path = Classes;
