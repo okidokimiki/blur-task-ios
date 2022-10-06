@@ -7,7 +7,7 @@ final class PhotoStreamView: BaseView {
     #warning("Это должно быть в viewModel")
     private var photos: [Photo] = Photo.allPhotos()
     
-    private lazy var photosCollectionView = BaseCollectionView(layout: PinterestLayout.self).do {
+    private(set) lazy var photosCollectionView = BaseCollectionView(layout: PinterestLayout.self).do {
         if let layout = $0.collectionViewLayout as? PinterestLayout {
             layout.delegate = self
         }

@@ -3,7 +3,6 @@ import Combine
 
 final class PhotoStreamViewModel {
     private(set) var photos: [Photo] = Photo.allPhotos()
-    private(set) var randPhotos: [RandomPhoto] = RandomPhoto.allPhotos()
 }
 
 protocol WebImageServicing {

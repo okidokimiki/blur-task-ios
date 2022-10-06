@@ -3,7 +3,7 @@ import SnapKit
 
 final class PhotoCollectionViewCell: BaseCollectionViewCell {
     
-    private lazy var imageView = UIImageView().do {
+    private(set) var imageView = UIImageView().do {
         $0.layer.cornerRadius = 15
         $0.clipsToBounds = true
     }
